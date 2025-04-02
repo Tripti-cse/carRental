@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Tailwind CSS v3.x CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="./css/tailwind.css" rel="stylesheet" />
+    <title>Car Rental - Home</title>
+  </head>
+  <body class="bg-gray-100">
+    <!-- Navbar -->
+    <!-- Header Section -->
+    <header
+      class="bg-gray-900 text-white p-4 flex justify-between items-center"
+    >
+      <div class="flex items-center">
+        <img
+          src="./assets/logo.jpg"
+          alt="Logo"
+          class="h-10 w-10 opacity-80 rounded-lg"
+        />
+        <h1 class="hidden md:block text-2xl ml-4 text-yellow-500 opacity-80">Car Rental Platform</h1>
+      </div>
+
+      <!-- Navigation for larger screens -->
+      <nav class="hidden md:flex gap-6">
+        <a href="../index.html" class="text-lg text-yellow-400 opacity-80 hover:underline">Home</a>
+        <a href="../pages/login.html" class="text-lg text-yellow-400 opacity-80 hover:underline"
+          >Login</a
+        >
+        <a href="../pages/signup.html" class="text-lg text-yellow-400 opacity-80 hover:underline"
+          >Signup</a
+        >
+        <a href="../pages/about.html" class="text-lg text-yellow-400 opacity-80 hover:underline"
+          >About Us</a
+        >
+        <a href="../pages/contact.html" class="text-lg text-yellow-400 opacity-80 hover:underline"
+          >Contact</a
+        >
+      </nav>
+
+      <!-- Mobile Menu Button (visible only on mobile) -->
+      <button
+        id="menu-btn"
+        class="md:hidden text-3xl text-yellow-400 focus:outline-none"
+      >
+        ☰
+      </button>
+    </header>
+
+    <!-- Mobile Modal -->
+    <div
+      id="mobile-modal"
+      class="fixed inset-0 bg-black bg-opacity-60 z-50 hidden flex-col transition-opacity duration-300"
+    >
+      <div
+        class="bg-gray-900 p-4 rounded-lg w-3/5 max-w-[50vw] text-center relative ml-auto mt-16"
+      >
+        <!-- Close Button -->
+        <button
+          id="close-btn"
+          class="text-gray-400 hover:text-white absolute top-3 right-4 text-2xl"
+        >
+          ✕
+        </button>
+
+        <!-- Navigation Links -->
+        <nav class="flex flex-col gap-4 text-white mt-6">
+          <a href="../index.html" class="text-lg hover:text-yellow-400">Home</a>
+          <a href="../pages/login.html" class="text-lg hover:text-yellow-400"
+            >Login</a
+          >
+          <a href="../pages/signup.html" class="text-lg hover:text-yellow-400"
+            >Signup</a
+          >
+          <a href="../pages/about.html" class="text-lg hover:text-yellow-400"
+            >About Us</a
+          >
+          <a href="../pages/contact.html" class="text-lg hover:text-yellow-400"
+            >Contact</a
+          >
+        </nav>
+      </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section
+      class="relative h-[90vh] bg-cover bg-center object-fit-cover"
+      style="background-image: url('./assets/bg-image.jpg')"
+    >
+      <div class="absolute inset-0 bg-gray-800 opacity-60"></div>
+      <div
+        class="absolute inset-0 flex flex-col justify-center items-center text-white max-md:px-5"
+      >
+        <h2 class="text-4xl font-bold">Rent Cars on Hourly or Daily Basis</h2>
+        <p class="mt-4 text-lg text-center">
+          Reliable, affordable, and flexible car rental service for your needs.
+        </p>
+        <a
+          href="pages/signup.html"
+          class="mt-4 bg-yellow-500 px-6 py-2 rounded-lg hover:bg-yellow-400 border-2"
+          >Get Started</a
+        >
+      </div>
+    </section>
+
+    <!-- Who We Are -->
+    <section class="min-h-[60vh] bg-gray-200">
+      <div
+        class="relative z-10 max-w-[90vw] mx-auto p-8 lg:p-16 flex flex-col lg:flex-row items-center justify-center text-gray-600"
+      >
+        <!-- Text Section -->
+        <div class="lg:w-2/3 mb-8 lg:mb-0 flex flex-col">
+          <h3
+            class="text-4xl text-black font-extrabold mb-6 text-center animate-pulse"
+          >
+            Who We Are
+          </h3>
+
+          <p class="text-lg leading-relaxed">
+            We are a leading car rental platform that connects
+            <span class="font-bold text-yellow-500 underline">car owners</span>
+            with individuals seeking reliable vehicles for
+            <span class="font-bold">hourly</span> or
+            <span class="font-bold">daily</span> rentals.
+          </p>
+
+          <ul class="mt-6 space-y-4 md:px-8 md:py-8">
+            <li class="flex items-center">
+              <svg
+                class="w-6 h-6 text-red-400 mr-2"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M5 13l4 4L19 7"
+                ></path>
+              </svg>
+              Flexible hourly and daily rental plans
+            </li>
+            <li class="flex items-center">
+              <svg
+                class="w-6 h-6 text-red-400 mr-2"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M5 13l4 4L19 7"
+                ></path>
+              </svg>
+              Verified car owners with reliable vehicles
+            </li>
+            <li class="flex items-center">
+              <svg
+                class="w-6 h-6 text-red-400 mr-2"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M5 13l4 4L19 7"
+                ></path>
+              </svg>
+              Seamless booking and easy payment options
+            </li>
+          </ul>
+
+          <a
+            href="./pages/about.html"
+            class="inline-block mt-8 bg-yellow-500 hover:bg-yellow-400 text-gray-900 font-bold py-3 px-8 rounded-lg shadow-lg transition duration-300 text-center md:w-[15rem] mx-auto"
+          >
+            Learn More
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- What We Do -->
+    <section class="min-h-[70vh] bg-gray-500 bg-opacity-80">
+      <div
+        class="max-w-[90vw] mx-auto p-8 lg:p-16 lg:pb-8 flex flex-col lg:flex-row items-center justify-between gap-12"
+      >
+        <!-- Text Section -->
+        <div class="lg:w-2/3 mx-auto">
+          <h3
+            class="text-4xl text-gray-800 font-extrabold mb-6 animate-fade-in text-center animate-pulse"
+          >
+            What We Do
+          </h3>
+
+          <p class="text-lg leading-relaxed text-gray-200 mb-6">
+            At
+            <span class="text-yellow-500 font-bold">Car Rental Platform</span>,
+            we simplify vehicle renting by providing 'affordable',
+            'flexible', and 'secure' services. Our goal is to make your car
+            rental experience hassle-free and convenient.
+          </p>
+
+          <ul class="space-y-4">
+            <li
+              class="flex items-center group transition-all duration-300 hover:translate-x-2"
+            >
+              <svg
+                class="w-6 h-6 text-blue-500 mr-3 group-hover:scale-110 transition-transform"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M5 13l4 4L19 7"
+                ></path>
+              </svg>
+              <span class="text-gray-300 font-semibold"
+                >Wide variety of cars for rent</span
+              >
+            </li>
+
+            <li
+              class="flex items-center group transition-all duration-300 hover:translate-x-2"
+            >
+              <svg
+                class="w-6 h-6 text-blue-500 mr-3 group-hover:scale-110 transition-transform"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M5 13l4 4L19 7"
+                ></path>
+              </svg>
+              <span class="text-gray-300 font-semibold"
+                >Flexible hourly and daily rental plans</span
+              >
+            </li>
+
+            <li
+              class="flex items-center group transition-all duration-300 hover:translate-x-2"
+            >
+              <svg
+                class="w-6 h-6 text-blue-500 mr-3 group-hover:scale-110 transition-transform"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M5 13l4 4L19 7"
+                ></path>
+              </svg>
+              <span class="text-gray-300 font-semibold"
+                >Secure and seamless payment options</span
+              >
+            </li>
+
+            <li
+              class="flex items-center group transition-all duration-300 hover:translate-x-2"
+            >
+              <svg
+                class="w-6 h-6 text-blue-500 mr-3 group-hover:scale-110 transition-transform"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M5 13l4 4L19 7"
+                ></path>
+              </svg>
+              <span class="text-gray-300 font-semibold"
+                >24/7 customer support</span
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Feedback Section -->
+    <section class="p-12 bg-gray-100">
+      <h3
+        class="text-4xl font-extrabold text-center text-gray-800 mb-10 animate-pulse"
+      >
+        Customer Feedback
+      </h3>
+
+      <div
+        class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto"
+      >
+        <!-- Feedback Card 1 -->
+        <div
+          class="bg-white p-6 rounded-lg shadow-lg border-l-8 border-yellow-400 hover:scale-105 transition-transform duration-300"
+        >
+          <p class="text-lg italic text-gray-700">
+            "Excellent service! The car was in great condition and the process
+            was super smooth."
+          </p>
+          <div class="flex items-center md:mt-4 mt-1">
+            <!-- Stars -->
+            <div class="flex text-yellow-400">⭐⭐⭐⭐⭐</div>
+          </div>
+          <p class="mt-2 md:mt-4 text-gray-600 font-semibold">- John Doe</p>
+        </div>
+
+        <!-- Feedback Card 2 -->
+        <div
+          class="bg-white p-6 rounded-lg shadow-lg border-l-8 border-blue-400 hover:scale-105 transition-transform duration-300"
+        >
+          <p class="text-lg italic text-gray-700">
+            "Great customer support. Car was delivered on time without any
+            issues."
+          </p>
+          <div class="flex items-center md:mt-4 mt-1">
+            <!-- Stars -->
+            <div class="flex text-yellow-400">⭐⭐⭐⭐☆</div>
+          </div>
+          <p class="md:mt-4 mt-1 text-gray-600 font-semibold">- Emma Smith</p>
+        </div>
+
+        <!-- Feedback Card 3 -->
+        <div
+          class="bg-white p-6 rounded-lg shadow-lg border-l-8 border-red-400 hover:scale-105 transition-transform duration-300"
+        >
+          <p class="text-lg italic text-gray-700">
+            "Affordable prices and very reliable. Will use again!"
+          </p>
+          <div class="flex items-center md:mt-4 mt-1">
+            <!-- Stars -->
+            <div class="flex text-yellow-400">⭐⭐⭐⭐☆</div>
+          </div>
+          <p class="md:mt-4 mt-1 text-gray-600 font-semibold">
+            - Sarah Johnson
+          </p>
+        </div>
+
+        <!-- Feedback Card 4 -->
+        <div
+          class="bg-white p-6 rounded-lg shadow-lg border-l-8 border-green-400 hover:scale-105 transition-transform duration-300"
+        >
+          <p class="text-lg italic text-gray-700">
+            "The booking process was seamless. Cars were clean and
+            well-maintained."
+          </p>
+          <div class="flex items-center md:mt-4 mt-1">
+            <!-- Stars -->
+            <div class="flex text-yellow-400">⭐⭐⭐⭐⭐</div>
+          </div>
+          <p class="md:mt-4 mt-1 text-gray-600 font-semibold">- Michael Lee</p>
+        </div>
+
+        <!-- Feedback Card 5 -->
+        <div
+          class="bg-white p-6 rounded-lg shadow-lg border-l-8 border-purple-400 hover:scale-105 transition-transform duration-300"
+        >
+          <p class="text-lg italic text-gray-700">
+            "Friendly staff and quick service. Highly recommended!"
+          </p>
+          <div class="flex items-center md:mt-4 mt-1">
+            <!-- Stars -->
+            <div class="flex text-yellow-400">⭐⭐⭐⭐☆</div>
+          </div>
+          <p class="md:mt-4 mt-1 text-gray-600 font-semibold">- Olivia Brown</p>
+        </div>
+
+        <!-- Feedback Card 6 -->
+        <div
+          class="bg-white p-6 rounded-lg shadow-lg border-l-8 border-orange-400 hover:scale-105 transition-transform duration-300"
+        >
+          <p class="text-lg italic text-gray-700">
+            "Affordable, reliable, and convenient. Will rent again for sure!"
+          </p>
+          <div class="flex items-center md:mt-4 mt-1">
+            <!-- Stars -->
+            <div class="flex text-yellow-400">⭐⭐⭐⭐⭐</div>
+          </div>
+          <p class="md:mt-4 mt-1 text-gray-600 font-semibold">
+            - Daniel Martinez
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white p-5 md:p-8">
+      <div class="container mx-auto flex justify-between">
+        <div class="max-md:max-w-[50vw]">
+          <h4 class="font-bold text-xl mb-4">Contact Us</h4>
+          <p class="mb-2">📍123 Street, City, Country</p>
+          <p class="mb-2">📞+1 234567890</p>
+          <p class="mb-2">
+            📧<a href="mailto:info@carrental.com" class="hover:underline"
+              >info@carrental.com</a
+            >
+          </p>
+        </div>
+
+        <div>
+          <h4 class="font-bold text-xl mb-4">Follow Us</h4>
+          <div class="flex gap-2 md:gap-4 max-md:flex-col">
+            <a href="#" class="hover:text-yellow-400">Facebook</a>
+            <a href="#" class="hover:text-yellow-400">Instagram</a>
+            <a href="#" class="hover:text-yellow-400">LinkedIn</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="text-center text-sm mt-8">
+        © 2025 Car Rental Platform. All Rights Reserved.
+      </div>
+    </footer>
+
+    <script src="./js/index.js" defer></script>
+  </body>
+</html>

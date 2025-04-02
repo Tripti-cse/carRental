@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Tailwind CSS v3.x CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link href="../css/tailwind.css" rel="stylesheet" />
+    <script src="../js/navigation.js" defer></script>
+    <title>Login</title>
+  </head>
+  <body class="bg-gray-500">
+    <div id="header"></div>
+
+    <section class="p-8 bg-gray-500">
+      <div class="max-w-lg mx-auto bg-gray-200 p-8 shadow-lg rounded-lg">
+        <h2 class="text-3xl font-bold mb-6 text-center">Login</h2>
+
+        <form action="#" method="POST" class="flex flex-col gap-4">
+          <label for="email" class="font-bold">Email</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Your Email"
+            class="p-3 border rounded-lg"
+          />
+
+          <label for="password" class="font-bold">Password</label>
+          <input
+            type="password"
+            id="password"
+            name="password"
+            placeholder="Your Password"
+            class="p-3 border rounded-lg"
+          />
+
+          <button
+            type="submit"
+            class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-500"
+          >
+            Login
+          </button>
+        </form>
+
+        <p class="text-center mt-4">
+          Don't have an account?
+          <a href="signup.html" class="text-blue-600 underline">Signup here</a>.
+        </p>
+      </div>
+    </section>
+
+    <div id="footer"></div>
+    <script src="../js/index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Tailwind CSS v3.x CDN -->
+<script src="https://cdn.tailwindcss.com"></script>
+
+    <link href="../css/tailwind.css" rel="stylesheet">
+    <script src="../js/navigation.js" defer></script>
+    <script src="../js/add-car.js" defer></script>
+    <title>Add Car</title>
+</head>
+<body class="bg-gray-100">
+
+<div id="header"></div>
+
+<section class="p-8">
+    <div class="max-w-lg mx-auto bg-white p-8 shadow-lg rounded-lg">
+        <h2 class="text-3xl font-bold mb-6 text-center">Add Your Car</h2>
+
+        <form id="add-car-form" class="flex flex-col gap-4">
+            <label for="ownerName" class="font-bold">Owner Name</label>
+            <input type="text" id="ownerName" name="ownerName" placeholder="Owner's Name" 
+                   class="p-3 border rounded-lg" required>
+
+            <label for="carModel" class="font-bold">Car Model</label>
+            <input type="text" id="carModel" name="carModel" placeholder="Car Model" 
+                   class="p-3 border rounded-lg" required>
+
+            <label for="carNumber" class="font-bold">Car Number</label>
+            <input type="text" id="carNumber" name="carNumber" placeholder="Car Number" 
+                   class="p-3 border rounded-lg" required>
+
+            <label for="rentPerDay" class="font-bold">Rent Per Day ($)</label>
+            <input type="number" id="rentPerDay" name="rentPerDay" placeholder="Rent per day" 
+                   class="p-3 border rounded-lg" required>
+
+            <label for="location" class="font-bold">Location</label>
+            <input type="text" id="location" name="location" placeholder="Location" 
+                   class="p-3 border rounded-lg" required>
+
+            <label for="imageUrl" class="font-bold">Car Image URL</label>
+            <input type="url" id="imageUrl" name="imageUrl" placeholder="Image URL" 
+                   class="p-3 border rounded-lg" required>
+
+            <button type="submit" 
+                    class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-500">
+                Add Car
+            </button>
+        </form>
+    </div>
+</section>
+
+<div id="footer"></div>
+
+</body>
+</html>

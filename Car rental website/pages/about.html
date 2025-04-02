@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link href="../css/tailwind.css" rel="stylesheet" />
+    <script src="../js/navigation.js" defer></script>
+    <title>About Us</title>
+  </head>
+  <body class="bg-gray-100">
+    <div id="header" class="fixed w-full z-50"></div>
+
+    <!-- About Us Section -->
+    <section class="min-h-[90vh] bg-gray-50 py-16 pt-24">
+      <div class="max-w-7xl mx-auto px-8">
+        <!-- Hero Banner -->
+        <div
+          class="relative bg-cover bg-center h-[40vh] rounded-lg shadow-lg overflow-hidden"
+        >
+          <div
+            class="absolute inset-0 bg-black bg-opacity-60 flex flex-col justify-center items-center"
+          >
+            <h1 class="text-5xl font-extrabold text-yellow-400 animate-pulse">
+              About Us
+            </h1>
+            <p class="text-lg text-white mt-4 text-center max-w-2xl">
+              We are your trusted car rental platform offering
+              <span class="font-bold">affordable</span> and
+              <span class="font-bold">reliable</span> services to meet all your
+              travel needs.
+            </p>
+          </div>
+        </div>
+
+        <!-- Info Section -->
+        <div
+          class="mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12"
+        >
+          <!-- Card 1 -->
+          <div
+            class="bg-white p-8 rounded-lg shadow-md hover:shadow-lg transition duration-300"
+          >
+            <div class="flex items-center gap-4 mb-4">
+              <svg
+                class="w-12 h-12 text-yellow-500"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M3 10h11M9 21V8a3 3 0 00-3-3H5a3 3 0 00-3 3v7a2 2 0 002 2h4v2a2 2 0 002 2z"
+                ></path>
+              </svg>
+              <h3 class="text-2xl font-bold">Our Mission</h3>
+            </div>
+            <p class="text-gray-600 leading-relaxed">
+              To provide <span class="font-bold">accessible</span>,
+              <span class="text-blue-500">reliable</span>, and
+              <span class="text-red-400">affordable</span> car rental services
+              for customers around the world.
+            </p>
+          </div>
+
+          <!-- Card 2 -->
+          <div
+            class="bg-white p-8 rounded-lg shadow-md hover:shadow-lg transition duration-300"
+          >
+            <div class="flex items-center gap-4 mb-4">
+              <svg
+                class="w-12 h-12 text-blue-500"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M13 10V3L4 14h7v7l9-11h-7z"
+                ></path>
+              </svg>
+              <h3 class="text-2xl font-bold">Our Vision</h3>
+            </div>
+            <p class="text-gray-600 leading-relaxed">
+              To become the
+              <span class="text-yellow-500 font-bold">leading platform</span>
+              for car rentals, providing innovative solutions and ensuring
+              customer satisfaction.
+            </p>
+          </div>
+
+          <!-- Card 3 -->
+          <div
+            class="bg-white p-8 rounded-lg shadow-md hover:shadow-lg transition duration-300"
+          >
+            <div class="flex items-center gap-4 mb-4">
+              <svg
+                class="w-12 h-12 text-red-500"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M9 12h6M9 16h6M9 8h6"
+                ></path>
+              </svg>
+              <h3 class="text-2xl font-bold">Why Choose Us?</h3>
+            </div>
+            <ul class="list-disc list-inside text-gray-600">
+              <li>✔️ Affordable pricing</li>
+              <li>✔️ Flexible rental options</li>
+              <li>✔️ Reliable customer support</li>
+              <li>✔️ Large network of verified car owners</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Team Section -->
+        <div class="mt-16">
+          <h2 class="text-4xl font-bold text-center mb-8">Meet Our Team</h2>
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+            <!-- Team Member 1 -->
+            <div class="text-center">
+              <img
+                src="../assets/person.jpg"
+                alt="Team Member"
+                class="w-40 h-40 mx-auto rounded-full shadow-lg mb-4"
+              />
+              <h3 class="text-xl font-bold">John Doe</h3>
+              <p class="text-gray-500">CEO & Founder</p>
+            </div>
+
+            <!-- Team Member 2 -->
+            <div class="text-center">
+              <img
+                src="../assets/person.jpg"
+                alt="Team Member"
+                class="w-40 h-40 mx-auto rounded-full shadow-lg mb-4"
+              />
+              <h3 class="text-xl font-bold">Jane Smith</h3>
+              <p class="text-gray-500">Marketing Head</p>
+            </div>
+
+            <!-- Team Member 3 -->
+            <div class="text-center">
+              <img
+                src="../assets/person.jpg"
+                alt="Team Member"
+                class="w-40 h-40 mx-auto rounded-full shadow-lg mb-4"
+              />
+              <h3 class="text-xl font-bold">Robert Brown</h3>
+              <p class="text-gray-500">Operations Manager</p>
+            </div>
+
+            <!-- Team Member 4 -->
+            <div class="text-center">
+              <img
+                src="../assets/person.jpg"
+                alt="Team Member"
+                class="w-40 h-40 mx-auto rounded-full shadow-lg mb-4"
+              />
+              <h3 class="text-xl font-bold">Emily White</h3>
+              <p class="text-gray-500">Customer Support</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div id="footer"></div>
+  </body>
+</html>

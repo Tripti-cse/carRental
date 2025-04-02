@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Tailwind CSS v3.x CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link href="../css/tailwind.css" rel="stylesheet" />
+    <title>Dashboard</title>
+  </head>
+  <body class="bg-gray-100">
+    <header
+      class="bg-blue-600 text-white p-4 flex justify-between items-center"
+    >
+      <h1 class="text-2xl">Car Rental Platform</h1>
+      <a href="add-car.html" class="bg-yellow-500 px-4 py-2 rounded"
+        >Add Your Car</a
+      >
+    </header>
+
+    <!-- Services Section -->
+    <section class="p-8">
+      <h2 class="text-3xl font-bold text-center">Available Cars</h2>
+      <div
+        id="car-container"
+        class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-6"
+      >
+        <!-- Cars will be dynamically inserted here -->
+      </div>
+    </section>
+
+    <script src="../js/dashboard.js" type="module"></script>
+  </body>
+</html>
